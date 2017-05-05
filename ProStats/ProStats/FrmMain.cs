@@ -42,5 +42,17 @@ namespace ProStats
             eventsLog.Show();
             eventsLog.MdiParent = this;
         }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmStudentEdit stuEdit = new FrmStudentEdit();
+            stuEdit.Show();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmStudentDelete stuDelete = new FrmStudentDelete();
+            stuDelete.Show();
+        }
     }
 }

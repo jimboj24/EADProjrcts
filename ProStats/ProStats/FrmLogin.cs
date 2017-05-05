@@ -40,9 +40,13 @@ namespace ProStats
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (((txtUserId.Text).ToUpper() == "ADMIN") && (txtPassword.Text == "AdminPass"))
+            if (((txtUserId.Text).ToUpper() == "A") && (txtPassword.Text == "p"))
             {
-                MessageBox.Show("Login successfully");
+                //MessageBox.Show("Login successfully");
+                var main = new FrmMain();
+                //Hide();
+                main.Show();
+                this.Hide();
             } else
                 MessageBox.Show("Incorrect User Id or Password...  ", "Important Note",
                                         MessageBoxButtons.OK,
